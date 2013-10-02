@@ -96,7 +96,18 @@ Bundle 'git://git.wincent.com/command-t.git'
 
 filetype plugin indent on
 
+" Plugins Options
+set guioptions-=L
+set wildignore+=*.o,*.obj,.git,*.gz
+let g:CommandTWildIgnore=&wildignore . ",**/node_modules/*"
+
+autocmd FocusGained * CommandTFlush
+autocmd BufWritePost * CommandTFlush
+
 " Leader maps
 nnoremap <leader>a :Ack
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader>d :NERDTreeToggle<cr>
+nnoremap <leader>p :RainbowParenthesesToggle<cr>
+nnoremap <silent> \ :YRShow<cr>
+inoremap <silent> \ <ESC>:YRShow<cr>
