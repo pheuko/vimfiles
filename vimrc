@@ -68,5 +68,32 @@ nnoremap ; :
 " Always Save
 au FocusLost * :wa
 
+" Vim Bundle
+
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" Bundles here:"
+" - Original Github Repos
+Bundle 'mileszs/ack.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-fugitive'
+" - Vim-scripts Repos
+Bundle 'YankRing.vim'
+Bundle 'nginx.vim'
+" - Non Github Repos
+Bundle 'git://git.wincent.com/command-t.git'
+" - Local Repos
+
+filetype plugin indent on
+
 " Leader maps
+nnoremap <leader>a :Ack
 nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader>d :NERDTreeToggle<cr>
