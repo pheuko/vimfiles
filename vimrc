@@ -86,7 +86,10 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-fugitive'
 " - Vim-scripts Repos
 Bundle 'YankRing.vim'
+Bundle 'repeat.vim'
+Bundle 'surround.vim'
 Bundle 'nginx.vim'
+Bundle 'rainbow_parentheses.vim'
 " - Non Github Repos
 Bundle 'git://git.wincent.com/command-t.git'
 " - Local Repos
