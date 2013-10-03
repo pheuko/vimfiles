@@ -1,6 +1,11 @@
 set nocompatible
 set modelines=0
 
+" Swap Off
+set noswapfile
+set nobackup
+set nowb
+
 " Tabs to spaces
 set tabstop=2
 set shiftwidth=2
@@ -43,7 +48,8 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 " Long Lines
-set wrap
+set nowrap
+set linebreak
 set textwidth=72
 set formatoptions=qrn1
 set colorcolumn=85
