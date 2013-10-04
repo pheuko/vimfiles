@@ -6,3 +6,6 @@ if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
   map <D-t> :CommandT<CR>
 endif
+
+set lines=999 columns=999
+
