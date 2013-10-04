@@ -9,3 +9,6 @@ endif
 
 set lines=999 columns=999
 
+highlight ColorColumn guibg=#2e373b
+highlight SignColumn guibg=#21272c
+
