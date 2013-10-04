@@ -32,6 +32,10 @@ set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
 set undofile
+set guioptions-=L
+set wildignore+=*.o,*.obj,.git,*.gz
+set splitright
+set splitbelow
 
 " Leader
 let mapleader = ","
@@ -47,17 +51,6 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
-" Long Lines
-set nowrap
-set linebreak
-set textwidth=72
-set formatoptions=qrn1
-set colorcolumn=85
-
-" Colorscheme
-colorscheme codeschool
-syntax on
-
 " History
 set history=10000
 
@@ -70,6 +63,10 @@ set listchars=eol:¬
 
 " Good
 nnoremap ; :
+
+" Statusline
+set statusline=%<\ %n::%f%{fugitive#statusline()}\ %m%r%y
+set statusline+=%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 
 " Always Save
 au FocusLost * :wa
@@ -90,6 +87,8 @@ Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'thoughtbot/vim-rspec'
 " - Vim-scripts Repos
 Bundle 'YankRing.vim'
 Bundle 'repeat.vim'
@@ -102,18 +101,51 @@ Bundle 'git://git.wincent.com/command-t.git'
 
 filetype plugin indent on
 
+" Long Lines
+set nowrap
+set linebreak
+set textwidth=72
+set formatoptions=qrn1
+set colorcolumn=80
+
 " Plugins Options
-set guioptions-=L
-set wildignore+=*.o,*.obj,.git,*.gz
 let g:CommandTWildIgnore=&wildignore . ",**/node_modules/*"
 
 autocmd FocusGained * CommandTFlush
 autocmd BufWritePost * CommandTFlush
 
 " Leader maps
-nnoremap <leader>a :Ack
+nnoremap <leader>n :vsp<cr>
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader>d :NERDTreeToggle<cr>
 nnoremap <leader>p :RainbowParenthesesToggle<cr>
 nnoremap <silent> \ :YRShow<cr>
 inoremap <silent> \ <ESC>:YRShow<cr>
+
+" Open vimrc or gvimrc
+nnoremap <leader>vv :vsp $MYVIMRC<cr>
+nnoremap <leader>vs :source $MYVIMRC<cr>
+nnoremap <leader>gv :vsp $MYGVIMRC<cr>
+nnoremap <leader>gs :source $MYGVIMRC<cr>
+
+" Identations
+vnoremap << <gv
+vnoremap >> >gv
+vnoremap = =gv
+
+" Arrows Off
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+" Colorscheme
+set background=dark
+colorscheme Tomorrow-Night
+highlight ColorColumn ctermbg=8
+syntax on
+
