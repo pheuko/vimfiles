@@ -116,11 +116,12 @@ autocmd BufWritePost * CommandTFlush
 
 " Leader maps
 nnoremap <leader>n :vsp<cr>
-nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader>d :NERDTreeToggle<cr>
 nnoremap <leader>p :RainbowParenthesesToggle<cr>
 nnoremap <silent> \ :YRShow<cr>
+nnoremap <S-w> <C-w>
 inoremap <silent> \ <ESC>:YRShow<cr>
+inoremap jj <ESC>
 
 " Open vimrc or gvimrc
 nnoremap <leader>vv :vsp $MYVIMRC<cr>
