@@ -95,8 +95,9 @@ Bundle 'repeat.vim'
 Bundle 'surround.vim'
 Bundle 'nginx.vim'
 Bundle 'rainbow_parentheses.vim'
+Bundle 'Command-T'
+Bundle 'preview'
 " - Non Github Repos
-Bundle 'git://git.wincent.com/command-t.git'
 " - Local Repos
 
 filetype plugin indent on
@@ -110,6 +111,7 @@ set colorcolumn=80
 
 " Plugins Options
 let g:CommandTWildIgnore=&wildignore . ",**/node_modules/*"
+nnoremap <leader>p :Preview<cr>
 
 autocmd FocusGained * CommandTFlush
 autocmd BufWritePost * CommandTFlush
@@ -117,7 +119,7 @@ autocmd BufWritePost * CommandTFlush
 " Leader maps
 nnoremap <leader>n :vsp<cr>
 nnoremap <leader>d :NERDTreeToggle<cr>
-nnoremap <leader>p :RainbowParenthesesToggle<cr>
+nnoremap <leader>( :RainbowParenthesesToggle<cr>
 nnoremap <silent> \ :YRShow<cr>
 nnoremap <S-w> <C-w>
 inoremap <silent> \ <ESC>:YRShow<cr>
