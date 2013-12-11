@@ -150,5 +150,6 @@ inoremap <right> <nop>
 set background=dark
 colorscheme Tomorrow-Night
 highlight ColorColumn ctermbg=8
+set t_Co=256
 syntax on
 
