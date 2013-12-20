@@ -33,7 +33,7 @@ set laststatus=2
 set relativenumber
 set undofile
 set guioptions-=L
-set wildignore+=*.o,*.obj,.git,*.gz
+set wildignore+=*.o,*.obj,.git,*.gz,*.un~
 set splitright
 set splitbelow
 
