@@ -89,6 +89,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'chase/vim-ansible-yaml'
 " - Vim-scripts Repos
 Bundle 'YankRing.vim'
 Bundle 'repeat.vim'
@@ -97,6 +98,9 @@ Bundle 'nginx.vim'
 Bundle 'rainbow_parentheses.vim'
 Bundle 'Command-T'
 Bundle 'preview'
+Bundle 'csv.vim'
+Bundle 'unimpaired.vim'
+
 " - Non Github Repos
 " - Local Repos
 
@@ -111,7 +115,7 @@ set colorcolumn=80
 
 " Plugins Options
 let g:CommandTWildIgnore=&wildignore . ",**/node_modules/*"
-nnoremap <leader>p :Preview<cr>
+au BufRead,BufNewFile *.md set filetype=markdown
 
 autocmd FocusGained * CommandTFlush
 autocmd BufWritePost * CommandTFlush
