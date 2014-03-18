@@ -95,6 +95,7 @@ Bundle 'thoughtbot/vim-rspec'
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'marijnh/tern_for_vim'
+Bundle 'jelera/vim-javascript-syntax'
 
 " - Vim-scripts Repos
 Bundle 'YankRing.vim'
