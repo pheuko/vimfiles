@@ -37,6 +37,9 @@ set wildignore+=*.o,*.obj,.git,*.gz,*.un~
 set splitright
 set splitbelow
 
+" File changes
+set autoread
+
 " Leader
 let mapleader = ","
 
