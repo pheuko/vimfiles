@@ -93,6 +93,9 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'chase/vim-ansible-yaml'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'marijnh/tern_for_vim'
+
 " - Vim-scripts Repos
 Bundle 'YankRing.vim'
 Bundle 'repeat.vim'
