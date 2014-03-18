@@ -105,6 +105,8 @@ Bundle 'csv.vim'
 Bundle 'unimpaired.vim'
 
 " - Non Github Repos
+Bundle 'Syntastic'
+
 " - Local Repos
 
 filetype plugin indent on
