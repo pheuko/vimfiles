@@ -16,12 +16,26 @@ Install Vundle
 BundleInstall
 ```
 
-Command-t compile:
+## Extras
 
-```
-ruby extconf.rb
+### Command-t:
+
+```zsh
+cd ~/.vim/bundle/Command-T && ruby extconf.rb
 ```
 
-```
+```zsh
 make
+```
+
+### YouCompleteMe
+
+```zsh
+cd ~/.vim/bundle/YouCompleteMe && ./install.sh
+```
+
+#### With TernJS
+
+```zsh
+cd ~/.vim/bundle/tern_for_vim && npm install
 ```
