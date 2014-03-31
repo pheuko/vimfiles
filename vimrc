@@ -107,6 +107,7 @@ Bundle 'Command-T'
 Bundle 'preview'
 Bundle 'csv.vim'
 Bundle 'unimpaired.vim'
+Bundle 'html5.vim'
 
 " - Non Github Repos
 Bundle 'Syntastic'
