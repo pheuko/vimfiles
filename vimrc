@@ -109,6 +109,7 @@ Bundle 'preview'
 Bundle 'csv.vim'
 Bundle 'unimpaired.vim'
 Bundle 'html5.vim'
+Plugin 'rails.vim'
 
 " - Non Github Repos
 Bundle 'Syntastic'
