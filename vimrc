@@ -92,6 +92,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'tpope/vim-dispatch'
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'marijnh/tern_for_vim'
@@ -144,6 +145,13 @@ nnoremap <leader>vv :vsp $MYVIMRC<cr>
 nnoremap <leader>vs :source $MYVIMRC<cr>
 nnoremap <leader>gv :vsp $MYGVIMRC<cr>
 nnoremap <leader>gs :source $MYGVIMRC<cr>
+
+" RSpec mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+let g:rspec_command = "Dispatch rspec {spec}"
 
 " Identations
 vnoremap << <gv
