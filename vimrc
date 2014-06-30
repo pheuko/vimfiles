@@ -97,6 +97,7 @@ Bundle 'chase/vim-ansible-yaml'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'marijnh/tern_for_vim'
 Bundle 'jelera/vim-javascript-syntax'
+Plugin 'Auto-Pairs'
 
 " - Vim-scripts Repos
 Bundle 'YankRing.vim'
