@@ -78,44 +78,46 @@ au FocusLost * :wa
 
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " Bundles here:"
 " - Original Github Repos
-Bundle 'mileszs/ack.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-fugitive'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'tpope/vim-dispatch'
-Bundle 'chase/vim-ansible-yaml'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'marijnh/tern_for_vim'
-Bundle 'jelera/vim-javascript-syntax'
+Plugin 'mileszs/ack.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-dispatch'
+Plugin 'chase/vim-ansible-yaml'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'marijnh/tern_for_vim'
+Plugin 'jelera/vim-javascript-syntax'
 Plugin 'Auto-Pairs'
 
 " - Vim-scripts Repos
-Bundle 'YankRing.vim'
-Bundle 'repeat.vim'
-Bundle 'surround.vim'
-Bundle 'nginx.vim'
-Bundle 'rainbow_parentheses.vim'
-Bundle 'Command-T'
-Bundle 'preview'
-Bundle 'csv.vim'
-Bundle 'unimpaired.vim'
-Bundle 'html5.vim'
+Plugin 'YankRing.vim'
+Plugin 'repeat.vim'
+Plugin 'surround.vim'
+Plugin 'nginx.vim'
+Plugin 'rainbow_parentheses.vim'
+Plugin 'Command-T'
+Plugin 'preview'
+Plugin 'csv.vim'
+Plugin 'unimpaired.vim'
+Plugin 'html5.vim'
 Plugin 'rails.vim'
 
 " - Non Github Repos
-Bundle 'Syntastic'
+Plugin 'Syntastic'
 
 " - Local Repos
+
+call vundle#end()
 
 filetype plugin indent on
 
