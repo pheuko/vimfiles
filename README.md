@@ -1,19 +1,27 @@
 # Vimfiles
 
-Vim files with Vim bundle
+Vim files with Vundle
 
 ## Install
 
 ```
-git clone repository ~/.vim
+git clone git@github.com:pheuko/vimfiles.git ~/.vim
 ```
 
 Symlink vimrc and gvimrc
 
+```zsh
+ln -s vimrc ~/.vimrc
+```
+
 Install Vundle
 
+```zsh
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
-BundleInstall
+
+```
+:PluginInstall
 ```
 
 ## Extras
