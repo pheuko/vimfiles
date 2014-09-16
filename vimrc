@@ -98,6 +98,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'Auto-Pairs'
+Plugin 'slim-template/vim-slim.git'
+Plugin 'tpope/vim-haml'
 
 " - Vim-scripts Repos
 Plugin 'YankRing.vim'
