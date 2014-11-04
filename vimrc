@@ -100,6 +100,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'Auto-Pairs'
 Plugin 'slim-template/vim-slim.git'
 Plugin 'tpope/vim-haml'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " - Vim-scripts Repos
 Plugin 'YankRing.vim'
