@@ -101,6 +101,7 @@ Plugin 'Auto-Pairs'
 Plugin 'slim-template/vim-slim.git'
 Plugin 'tpope/vim-haml'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'othree/html5.vim'
 
 " - Vim-scripts Repos
 Plugin 'YankRing.vim'
@@ -112,7 +113,6 @@ Plugin 'Command-T'
 Plugin 'preview'
 Plugin 'csv.vim'
 Plugin 'unimpaired.vim'
-Plugin 'html5.vim'
 Plugin 'rails.vim'
 
 " - Non Github Repos
