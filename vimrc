@@ -102,6 +102,7 @@ Plugin 'slim-template/vim-slim.git'
 Plugin 'tpope/vim-haml'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'othree/html5.vim'
+Plugin 'ngmy/vim-rubocop'
 
 " - Vim-scripts Repos
 Plugin 'YankRing.vim'
