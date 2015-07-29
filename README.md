@@ -29,7 +29,7 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ### Command-t:
 
 ```zsh
-cd ~/.vim/bundle/Command-T && ruby extconf.rb
+cd ~/.vim/bundle/command-t/ruby/command-t && ruby extconf.rb && make
 ```
 
 ```zsh
