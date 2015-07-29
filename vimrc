@@ -103,6 +103,7 @@ Plugin 'tpope/vim-haml'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'othree/html5.vim'
 Plugin 'ngmy/vim-rubocop'
+Plugin 'kchmck/vim-coffee-script'
 
 " - Vim-scripts Repos
 Plugin 'YankRing.vim'
