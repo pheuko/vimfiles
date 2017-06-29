@@ -148,7 +148,6 @@ nnoremap <leader>d :NERDTreeToggle<cr>
 nnoremap <leader>( :RainbowParenthesesToggle<cr>
 nnoremap <silent> \ :YRShow<cr>
 nnoremap <S-w> <C-w>
-inoremap <silent> \ <ESC>:YRShow<cr>
 inoremap jj <ESC>
 
 " Open vimrc or gvimrc
