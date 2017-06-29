@@ -105,6 +105,7 @@ Plugin 'othree/html5.vim'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-abolish'
+Plugin 'marcopaganini/termschool-vim-theme'
 
 " - Vim-scripts Repos
 Plugin 'YankRing.vim'
@@ -180,7 +181,7 @@ inoremap <right> <nop>
 
 " Colorscheme
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme termschool
 highlight ColorColumn ctermbg=8
 set t_Co=256
 syntax on
